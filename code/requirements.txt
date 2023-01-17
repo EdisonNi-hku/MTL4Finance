@@ -1,0 +1,7 @@
+transformers==4.12.1
+datasets
+torchtext
+packaging
+scikit-learn
+seqeval
+nltk
