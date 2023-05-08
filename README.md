@@ -5,7 +5,7 @@ We conduct a case study on Financial NLP, exploring when will MTL work from a pe
 ```shell
 conda create -n mtl python==3.7 --yes
 conda activate mtl
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 pip install -r code/requirements.txt
 ```
 
@@ -17,9 +17,10 @@ unzip dataset.zip
 # Datasets of NC and NAD requires sending an request to their authors. See:
 # NC: https://sites.google.com/nlg.csie.ntu.edu.tw/finnum3/data
 # NAD: https://sites.google.com/nlg.csie.ntu.edu.tw/finnum2020/data
-# NAD has its official train/dev/test sets. NC provides official train/test sets.
-# To replicate our validation set of
-# NC: split 20% for dev from the official training data, using sklearn.train_test_split with a random seed of 42
+# NAD has its official train/dev/test sets. NC provides official train/dev sets.
+# To replicate our train/dev/test splits for NC:
+# split 20% for dev from the official training data (the remaining 80% is our training split), using sklearn.train_test_split with a random seed of 42
+# Use the official dev set for testing
 ```
 
 ### Pre-trained Model Preparation
