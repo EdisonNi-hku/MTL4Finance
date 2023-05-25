@@ -1,4 +1,5 @@
 # when-does-mtl-work
+Official codebase for paper [When Does Aggregating Multiple Skills with Multi-Task Learning Work? A Case Study in Financial NLP](https://arxiv.org/abs/2305.14007)
 We conduct a case study on Financial NLP, exploring when will MTL work from a perspective of the relations between tasks and skills to be aggregated.
 
 ### Configuring the environment
